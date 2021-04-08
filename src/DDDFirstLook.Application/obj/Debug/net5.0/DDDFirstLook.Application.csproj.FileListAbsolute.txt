@@ -1,0 +1,15 @@
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\DDDFirstLook.Application.deps.json
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\DDDFirstLook.Application.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\ref\DDDFirstLook.Application.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\DDDFirstLook.Application.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.AssemblyInfoInputs.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.AssemblyInfo.cs
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.csproj.CoreCompileInputs.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\ref\DDDFirstLook.Application.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\DDDFirstLook.Domain.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\bin\Debug\net5.0\DDDFirstLook.Domain.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.csprojAssemblyReference.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Application\obj\Debug\net5.0\DDDFirstLook.Application.csproj.CopyComplete

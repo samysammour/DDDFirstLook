@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DDDFirstLook.Infrastructure/1.0.0": {
+        "dependencies": {
+          "DDDFirstLook.Application": "1.0.0",
+          "DDDFirstLook.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DDDFirstLook.Infrastructure.dll": {}
+        }
+      },
+      "DDDFirstLook.Application/1.0.0": {
+        "dependencies": {
+          "DDDFirstLook.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DDDFirstLook.Application.dll": {}
+        }
+      },
+      "DDDFirstLook.Domain/1.0.0": {
+        "runtime": {
+          "DDDFirstLook.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DDDFirstLook.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DDDFirstLook.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DDDFirstLook.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

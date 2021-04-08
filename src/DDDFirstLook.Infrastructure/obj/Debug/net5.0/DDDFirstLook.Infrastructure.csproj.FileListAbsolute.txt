@@ -1,0 +1,17 @@
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Infrastructure.deps.json
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Infrastructure.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\ref\DDDFirstLook.Infrastructure.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Infrastructure.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.AssemblyInfoInputs.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.AssemblyInfo.cs
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\ref\DDDFirstLook.Infrastructure.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Application.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Domain.dll
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Application.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Domain.pdb
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.csprojAssemblyReference.cache
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.csproj.CopyComplete
