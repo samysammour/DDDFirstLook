@@ -2,17 +2,16 @@ using DDDFirstLook.Domain.Products;
 using DDDFirstLook.Infrastructure.Products;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using DDDFirstLook.Infrastructure;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using DDDFirstLook.Infrastructure.AutoMapper;
+
 
 namespace DDDFirstLook
 {
@@ -34,6 +33,17 @@ namespace DDDFirstLook
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DDDFirstLook", Version = "v1" });
             });
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies().Where(a =>
+                // ReSharper disable once PossibleNullReferenceException
+                !a.GetName().Name.StartsWith("Microsoft.", StringComparison.OrdinalIgnoreCase)).ToArray().Union(
+                new[]
+                {
+                    typeof(ProductProfiles).Assembly
+                }).ToArray());
+
+            services.AddDbContextFactory<MyDbContext>(b =>
+                    b.UseInMemoryDatabase(databaseName: "DDDFirstLook"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

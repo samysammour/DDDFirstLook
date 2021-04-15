@@ -15,3 +15,6 @@ C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\n
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Domain.pdb
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.csprojAssemblyReference.cache
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.csproj.CopyComplete
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Infrastructure.runtimeconfig.json
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\bin\Debug\net5.0\DDDFirstLook.Infrastructure.runtimeconfig.dev.json
+C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Infrastructure\obj\Debug\net5.0\DDDFirstLook.Infrastructure.genruntimeconfig.cache
