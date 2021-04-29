@@ -9,4 +9,3 @@ C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Domain\bin\Debug\net5.0\DD
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Domain\obj\Debug\net5.0\DDDFirstLook.Domain.dll
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Domain\obj\Debug\net5.0\ref\DDDFirstLook.Domain.dll
 C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Domain\obj\Debug\net5.0\DDDFirstLook.Domain.pdb
-C:\Samy Sammour\Private\Projects\DDD\src\DDDFirstLook.Domain\obj\Debug\net5.0\DDDFirstLook.Domain.csprojAssemblyReference.cache

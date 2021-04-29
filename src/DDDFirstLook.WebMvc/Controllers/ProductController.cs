@@ -1,4 +1,5 @@
-﻿using DDDFirstLook.Domain.Primitives;
+﻿using DDDFirstLook.Domain.Customers;
+using DDDFirstLook.Domain.Primitives;
 using DDDFirstLook.Domain.Products;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -23,6 +24,8 @@ namespace DDDFirstLook.Controllers
         [HttpGet]
         public List<Product> GetAll()
         {
+            var customer = new Customer(new FirstName("Samy"), LastNameFactory.Create("Sammour"));
+
             var product = new Product("Product 2");
             var postalCode = PostalCode.Create("12345");
             product.AddAddress("Str2", postalCode, "Jeddah", "Saudi");
