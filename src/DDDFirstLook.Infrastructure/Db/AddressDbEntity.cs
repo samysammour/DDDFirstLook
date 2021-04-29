@@ -2,11 +2,13 @@
 {
     public class AddressDbEntity : Entity<int>
     {
-        public string Type { get; set; }
+        public string Street { get; set; }
 
-        public int Count { get; set; }
+        public string PostalCode { get; set; }
 
-        public bool IsActive { get; set; }
+        public string City { get; set; }
+
+        public string Country { get; set; }
 
         public int ProductId { get; set; }
 

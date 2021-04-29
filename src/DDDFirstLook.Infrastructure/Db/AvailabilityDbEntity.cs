@@ -1,14 +1,12 @@
 ﻿namespace DDDFirstLook.Infrastructure.Db
 {
-    public class AvailabilityDbEntity : Entity<int>
+    public class AvailabilityDbEntity: Entity<int>
     {
-        public string Street { get; set; }
+        public string Type { get; set; }
 
-        public string PostalCode { get; set; }
+        public int Count { get; set; }
 
-        public string City { get; set; }
-
-        public string Country { get; set; }
+        public bool IsActive { get; set; }
 
         public int ProductId { get; set; }
 

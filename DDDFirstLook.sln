@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{7DC7BB00-42DC-4004-8518-1629FA6C647E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Infrastructure", "2. Infrastructure", "{BDD842DC-4652-4F3C-91D5-8C2CDD7E2D80}"
+	ProjectSection(SolutionItems) = preProject
+		src\DDDFirstLook.WebMvc\Startup.cs = src\DDDFirstLook.WebMvc\Startup.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Application", "3. Application", "{0554A885-7C86-4EED-82A6-10546A2DADF6}"
 EndProject
@@ -13,11 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain", "4. Domain", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDFirstLook.WebMvc", "src\DDDFirstLook.WebMvc\DDDFirstLook.WebMvc.csproj", "{2537F2BB-BA0C-4DED-B8AA-55F4A220D551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDFirstLook.Infrastructure", "src\DDDFirstLook.Infrastructure\DDDFirstLook.Infrastructure.csproj", "{08605FBB-1B13-4160-B41B-13777C263694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDFirstLook.Infrastructure", "src\DDDFirstLook.Infrastructure\DDDFirstLook.Infrastructure.csproj", "{08605FBB-1B13-4160-B41B-13777C263694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDFirstLook.Application", "src\DDDFirstLook.Application\DDDFirstLook.Application.csproj", "{B7D095A5-F216-46D7-B025-FB735F39F713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDFirstLook.Application", "src\DDDFirstLook.Application\DDDFirstLook.Application.csproj", "{B7D095A5-F216-46D7-B025-FB735F39F713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDFirstLook.Domain", "src\DDDFirstLook.Domain\DDDFirstLook.Domain.csproj", "{4D418974-BCAD-4713-8C47-9C088B43E59A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDFirstLook.Domain", "src\DDDFirstLook.Domain\DDDFirstLook.Domain.csproj", "{4D418974-BCAD-4713-8C47-9C088B43E59A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

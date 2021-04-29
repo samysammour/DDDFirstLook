@@ -1,4 +1,5 @@
-﻿using DDDFirstLook.Domain.Products;
+﻿using DDDFirstLook.Domain.Primitives;
+using DDDFirstLook.Domain.Products;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,6 +23,12 @@ namespace DDDFirstLook.Controllers
         [HttpGet]
         public List<Product> GetAll()
         {
+            var product = new Product("Product 2");
+            var postalCode = PostalCode.Create("12345");
+            product.AddAddress("Str2", postalCode, "Jeddah", "Saudi");
+            Console.WriteLine($"Postal code value = {postalCode}");
+            Console.WriteLine($"Product value = {product}");
+            this.productRepository.Insert(product);
             return this.productRepository.GetAll();
         }
     }

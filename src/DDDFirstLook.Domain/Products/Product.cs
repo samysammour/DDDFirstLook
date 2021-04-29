@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DDDFirstLook.Domain.Primitives;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,6 +13,11 @@ namespace DDDFirstLook.Domain.Products
             this.Id = id;
         }
 
+        public Product(string name)
+        {
+            this.Name = name;
+        }
+
         public string Name { get; private set; }
 
         public int Total { get; private set; }
@@ -20,7 +26,7 @@ namespace DDDFirstLook.Domain.Products
 
         public List<Availability> Availabilities { get; private set; }
 
-        private string[] AcceptedCountries = new string[] { "Syria", "Iraq" };
+        private string[] AcceptedCountries = new string[] { "Syria", "Iraq", "Saudi" };
 
         // Todo: add credit card example
         public void ChangeName(string name)
@@ -53,14 +59,12 @@ namespace DDDFirstLook.Domain.Products
             this.SetTotal();
         }
 
-        public void AddAddress(string street, string postalCode, string city, string country)
+        public void AddAddress(string street, PostalCode postalCode, string city, string country)
         {
             if (this.AcceptedCountries.All(x => x != country))
             {
                 throw new Exception($"{country} Not valid Country");
             }
-
-            // Validate City, Postal Code, Street
 
             this.Address = new Address();
             this.Address.Street = street;
@@ -69,7 +73,7 @@ namespace DDDFirstLook.Domain.Products
             this.Address.Country = country;
         }
 
-        public void ChangePostalCode(string postalCode)
+        public void ChangePostalCode(PostalCode postalCode)
         {
             if (this.Address == null)
             {

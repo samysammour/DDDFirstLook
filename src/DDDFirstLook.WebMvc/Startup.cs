@@ -11,8 +11,10 @@ using DDDFirstLook.Infrastructure;
 using System;
 using System.Linq;
 using DDDFirstLook.Infrastructure.AutoMapper;
-
-
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using DDDFirstLook.Infrastructure;
 namespace DDDFirstLook
 {
     public class Startup
@@ -27,12 +29,22 @@ namespace DDDFirstLook
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DDDFirstLook", Version = "v1" });
             });
+
+            services.AddDbContext<MyDbContext>(options =>
+               {
+                   options.UseSqlServer("Server=.;Database=DDDFirstLook;Trusted_Connection=True;MultipleActiveResultSets=true", b =>
+                   {
+                       b.MigrationsAssembly(typeof(MyDbContext).Assembly.FullName);
+                       b.EnableRetryOnFailure();
+                   });
+
+                   options.EnableDetailedErrors();
+               });
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies().Where(a =>
                 // ReSharper disable once PossibleNullReferenceException
@@ -42,8 +54,7 @@ namespace DDDFirstLook
                     typeof(ProductProfiles).Assembly
                 }).ToArray());
 
-            services.AddDbContextFactory<MyDbContext>(b =>
-                    b.UseInMemoryDatabase(databaseName: "DDDFirstLook"));
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -2,19 +2,23 @@
 using Bogus;
 using DDDFirstLook.Domain.Products;
 using DDDFirstLook.Infrastructure.Db;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DDDFirstLook.Infrastructure.Products
 {
     public class ProductRepository : IProductRepository
     {
         private readonly IMapper mapper;
+        private readonly MyDbContext dbContext;
 
-        public ProductRepository(IMapper mapper)
+        public ProductRepository(IMapper mapper, MyDbContext dbContext)
         {
             this.mapper = mapper;
+            this.dbContext = dbContext;
         }
 
         public void Delete(int id)
@@ -24,9 +28,8 @@ namespace DDDFirstLook.Infrastructure.Products
 
         public List<Product> GetAll()
         {
-            var generator = new Faker<ProductDbEntity>();
-            var entities = generator.Generate(100);
-            return this.mapper.Map<List<Product>>(entities);
+            var products = this.dbContext.Products.Include(x => x.Address).Include(x => x.Availabilities).ToList();
+            return this.mapper.Map<List<Product>>(products);
         }
 
         public Product GetById(int id)
@@ -36,10 +39,10 @@ namespace DDDFirstLook.Infrastructure.Products
 
         public Product Insert(Product product)
         {
-            // insert product
-            // insert all addresses
-            // insert all availability
-            throw new NotImplementedException();
+            var dbEntity = this.mapper.Map<ProductDbEntity>(product);
+            this.dbContext.Products.Add(dbEntity);
+            this.dbContext.SaveChanges();
+            return product;
         }
 
         public Product Update(Product product)

@@ -1,8 +1,13 @@
 ﻿using DDDFirstLook.Domain.Primitives;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DDDFirstLook.Domain.Products
+namespace DDDFirstLook.Domain.Customers
 {
-    public class Address
+    public class CustomerAddress
     {
         public string Street { get; set; }
 

@@ -8,7 +8,7 @@ namespace DDDFirstLook.Infrastructure.Db
 
         public int Total { get; set; }
 
-        public List<AddressDbEntity> Addresses { get; set; }
+        public AddressDbEntity Address { get; set; }
 
         public List<AvailabilityDbEntity> Availabilities { get; set; }
     }
