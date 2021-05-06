@@ -1,6 +1,7 @@
 ﻿using DDDFirstLook.Domain.Customers;
 using DDDFirstLook.Domain.Primitives;
 using DDDFirstLook.Domain.Products;
+using DDDFirstLook.WebMvc;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -32,7 +33,7 @@ namespace DDDFirstLook.Controllers
             Console.WriteLine($"Postal code value = {postalCode}");
             Console.WriteLine($"Product value = {product}");
             this.productRepository.Insert(product);
-            return this.productRepository.GetAll();
+            return new List<Product>() { product};
         }
     }
 }
