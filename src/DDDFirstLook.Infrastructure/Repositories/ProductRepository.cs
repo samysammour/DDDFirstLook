@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Bogus;
+using DDDFirstLook.Domain.Customers;
 using DDDFirstLook.Domain.Products;
 using DDDFirstLook.Infrastructure.Db;
 using Microsoft.EntityFrameworkCore;
